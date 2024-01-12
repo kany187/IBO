@@ -8,7 +8,7 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 
 const About = () => {
   return (
-    <Box pt='10'w='full' h={{ base: '1350px', sm: '1350px', md: '860px'}} color='gray.500' bgColor='#0A0E19' id='about'>
+    <Box pt='10'w='full' h={{ base: '1450px', sm: '1350px', md: '860px'}} color='gray.500' bgColor='#0A0E19' id='about'>
         <Heading size='sm'textAlign='center' pt='5'>Some keys aspects that define my approach to software development.</Heading>
         <Flex pt='10'  flexDirection={['row', 'row', 'row']}  justifyContent={['space-around', 'space-around', 'space-around']}>
             <Flex flexDirection={['column', 'column', 'row']} justifyContent={['space-around', 'space-around', 'space-around']}>
