@@ -23,7 +23,7 @@ const Contact = () => {
     try {
       setSubmitting(true)
       await axios.post('/api/contact', data)
-      toast.success("We'll be in touch soon!")
+      toast.success("I'll be in touch soon!")
       reset()
       setTimeout(() => {
         setSubmitting(false)
@@ -38,18 +38,18 @@ const Contact = () => {
     <>
     <Toaster />
     <Box h='800' id='contact'>
-          <Text fontSize='30' ml='10' pt='250' textAlign='center'>Have a question or want to work together?</Text>
+          <Text fontSize={{base: '20', sm: '30'}} ml={{base: '1', sm: '10'}} pt='250' textAlign='center'>Have a question or want to work together?</Text>
           <form onSubmit={onSubmit}>
             <Stack spacing={3} align='center' pt='10'>
-            <Box w='40%'>
+            <Box w={{base: '70%', sm: '70%', md: '40%'}}>
             <Input type='text'placeholder="Name" {...register('name')} required/>
             {errors.name && <Text color='red'>{errors.name.message}</Text>}
             </Box>
-            <Box w='40%'>
+            <Box w={{base: '70%', sm: '70%', md: '40%'}}>
             <Input type='text' placeholder="Email" {...register('email')} required/>
             {errors.email && <Text color='red'>{errors.email.message}</Text>}
               </Box>
-              <Box w='40%'>
+              <Box w={{base: '70%', sm: '100%', md: '40%', lg: '40%'}}>
               <Textarea placeholder='Your message' {...register('message')} required />
               {errors.message && <Text color='red'>{errors.message.message}</Text>}
               </Box>

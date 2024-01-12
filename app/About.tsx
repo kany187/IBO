@@ -1,15 +1,14 @@
 'use client';
-import { Box, Card, CardBody, CardFooter, Flex, HStack, Heading, Icon, List, ListItem, Progress, Text } from '@chakra-ui/react'
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import { GoStopwatch } from "react-icons/go";
-import { GiPencilRuler } from "react-icons/gi";
-import { IoColorPaletteOutline } from "react-icons/io5"
+import { Box, Card, CardFooter, Flex, Heading, Icon, Progress, Text } from '@chakra-ui/react';
 import Image from 'next/image';
-import { courgette } from './font';
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { GiPencilRuler } from "react-icons/gi";
+import { GoStopwatch } from "react-icons/go";
+import { IoColorPaletteOutline } from "react-icons/io5";
 
 const About = () => {
   return (
-    <Box pt='10'w='full' h={{ sm: '1350px', md: '860px'}} color='gray.500' bgColor='#0A0E19' id='about'>
+    <Box pt='10'w='full' h={{ base: '1350px', sm: '1350px', md: '860px'}} color='gray.500' bgColor='#0A0E19' id='about'>
         <Heading size='sm'textAlign='center' pt='5'>Some keys aspects that define my approach to software development.</Heading>
         <Flex pt='10'  flexDirection={['row', 'row', 'row']}  justifyContent={['space-around', 'space-around', 'space-around']}>
             <Flex flexDirection={['column', 'column', 'row']} justifyContent={['space-around', 'space-around', 'space-around']}>
@@ -61,37 +60,37 @@ const About = () => {
         <Progress value={90} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='6' alignItems='center' justifyContent={['center', 'center', 'center']}>
+        <Flex gap={{base: '8', sm: '6'}} alignItems='center' justifyContent={['center', 'center', 'center']}>
         <Text>Javascript</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={80} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='5' alignItems='center'  justifyContent={['center', 'center', 'center']}>
+        <Flex gap={{base: '7', sm: '5'}}  alignItems='center'  justifyContent={['center', 'center', 'center']}>
         <Text>TypeScript</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={80} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='10' alignItems='center'  justifyContent={['center', 'center', 'center']} >
+        <Flex gap={{base: '12', sm: '10'}}  alignItems='center'  justifyContent={['center', 'center', 'center']} >
         <Text>NextJS</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={80} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='10' alignItems='center'  justifyContent={['center', 'center', 'center']}>
+        <Flex gap={{base: '12', sm: '10'}}  alignItems='center'  justifyContent={['center', 'center', 'center']}>
         <Text>Node.js</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={80} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='12' alignItems='center'  justifyContent={['center', 'center', 'flex-end']} mr='5'>
+        <Flex gap={{base: '8', sm: '12'}}  alignItems='center'  justifyContent={['center', 'center', 'flex-end']} mr='5'>
         <Text>Python</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={60} height='20px' colorScheme='twitter'/>
         </Box>
         </Flex>
-        <Flex gap='16' alignItems='center' justifyContent={['center', 'center', 'flex-end']}  mr='5'>
+        <Flex gap={{base: '12', sm: '12'}}  alignItems='center' justifyContent={['center', 'center', 'flex-end']}  mr='5'>
         <Text>Java</Text>
         <Box style={{ width: '20%' }} >
         <Progress value={50} height='20px' colorScheme='twitter'/>
@@ -100,7 +99,7 @@ const About = () => {
         </Box>
 
         <Heading size='sm' pt='10' textAlign='center'>Where I&apos;ve Worked</Heading>
-       <Flex flexDirection={['column', 'column', 'row']} gap='5' justifyContent='space-around' alignItems={['center', 'center']} pt={{sm: '30px'}}>
+       <Flex flexDirection={['column', 'column', 'row']} gap={{base: '10', sm: '5'}} justifyContent='space-around' alignItems={['center', 'center']} pt={{base: '30px', sm: '30px'}}>
 
             <Card maxW='150' h='200' borderRadius="10px" overflow="hidden" >  
                 <Image src='/integrasys.jpeg' alt='fsu' width='150' height='200' objectFit='cover' />
