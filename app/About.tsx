@@ -17,7 +17,7 @@ const About = () => {
                 <Heading size={{ xs: '10', md: 'md'}} textAlign='center'>Clean code</Heading>
                 <Text textAlign='center'>Because cleaner code is easier to iterate on.</Text>
             </Box>
-            <Box textAlign='center' pt={{sm: '5',md: '0'}} ml={{md: '5'}}>
+            <Box textAlign='center' pt={{base: '50', sm: '5',md: '0'}} ml={{md: '5'}}>
                 <Icon as={GoStopwatch} boxSize={{ xs: '5'}}/>
                 <Heading  size={{ xs: '10', md: 'md'}} textAlign='center'>Execution</Heading>
                 <Text textAlign='center'>Code that not only runs but sprints.</Text>
@@ -29,7 +29,7 @@ const About = () => {
                 <Heading  size={{ xs: '10', md: 'md'}} textAlign='center'>Correctness</Heading>
                 <Text textAlign='center'>The program meets user expectations seamlessly.</Text>
             </Box>
-            <Box textAlign='center' pt={{sm: '5', md: '0'}} ml={{md: '5'}}>
+            <Box textAlign='center' pt={{base: '50', sm: '5', md: '0'}} ml={{md: '5'}}>
                 <Icon as={IoColorPaletteOutline} boxSize={{ xs: '5'}}/>
                 <Heading  size={{ xs: '10', md: 'md'}} textAlign='center'>UI</Heading>
                 <Text textAlign='center'>Because a captivating and simple UI is paramount.</Text>
