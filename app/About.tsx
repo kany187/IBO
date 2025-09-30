@@ -9,7 +9,25 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 const About = () => {
   return (
     <Box pt='10' w='full' h={{ base: '1800px', sm: '1700px', md: '1200px', lg: '1100px'}} color='gray.500' bgColor='#0A0E19' id='about'>
-        <Heading size='sm'textAlign='center' pt='5'>Some keys aspects that define my approach to software development.</Heading>
+        {/* <Heading size='lg' textAlign='center' pt='5' color='white' mb='8'>
+          My Story & Approach to Software Development
+        </Heading> */}
+        {/* <Box maxW='800px' mx='auto' px='4' mb='12'>
+          <Text fontSize='lg' color='gray.300' textAlign='center' lineHeight='1.6' mb='6'>
+            With over 3 years of experience in full-stack development, I&apos;ve helped companies 
+            scale their digital infrastructure and improve user experiences. My journey began at 
+            Frostburg State University, where I developed a passion for solving complex problems 
+            through elegant code.
+          </Text>
+          <Text fontSize='md' color='gray.400' textAlign='center' lineHeight='1.6'>
+            I believe in writing code that not only works but tells a story - clean, maintainable, 
+            and scalable solutions that stand the test of time. When I&apos;m not coding, you&apos;ll find me 
+            exploring new technologies, contributing to open-source projects, or mentoring fellow developers.
+          </Text>
+        </Box> */}
+        {/* <Heading size='md' textAlign='center' pt='5' color='white' mb='8'>
+          Key Principles That Drive My Development Process
+        </Heading> */}
         <Flex pt='10'  flexDirection={['row', 'row', 'row']}  justifyContent={['space-around', 'space-around', 'space-around']}>
             <Flex flexDirection={['column', 'column', 'row']} justifyContent={['space-around', 'space-around', 'space-around']}>
             <Box textAlign='center'>
@@ -160,7 +178,9 @@ const About = () => {
           </Box>
         </Box>
 
-        <Heading size='sm' pt='10' textAlign='center'>Where I&apos;ve Worked</Heading>
+
+
+        <Heading size='md' pt='10' textAlign='center' color='white'>Where I&apos;ve Worked</Heading>
        <Flex flexDirection={['column', 'column', 'row']} gap={{base: '10', sm: '5'}} justifyContent='space-around' alignItems={['center', 'center']} pt={{base: '30px', sm: '30px'}}>
 
             <Card maxW='150' h='200' borderRadius="10px" overflow="hidden" >  
