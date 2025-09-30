@@ -9,7 +9,7 @@ const Footer = () => {
         <Divider />
         <Flex align='center' justifyContent='space-between'  pt='5'>
         <Text fontSize='12' ml='5'>
-            Copyright &copy; 2024 Geremy Ibobi
+            Copyright &copy; 2025 Geremy Ibobi
           </Text> 
           <Link href='https://www.linkedin.com/in/geremy-ibobi-51645792/'>
           <IconButton

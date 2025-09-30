@@ -8,7 +8,7 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 
 const About = () => {
   return (
-    <Box pt='10'w='full' h={{ base: '1450px', sm: '1350px', md: '860px'}} color='gray.500' bgColor='#0A0E19' id='about'>
+    <Box pt='10' w='full' h={{ base: '1800px', sm: '1700px', md: '1200px', lg: '1100px'}} color='gray.500' bgColor='#0A0E19' id='about'>
         <Heading size='sm'textAlign='center' pt='5'>Some keys aspects that define my approach to software development.</Heading>
         <Flex pt='10'  flexDirection={['row', 'row', 'row']}  justifyContent={['space-around', 'space-around', 'space-around']}>
             <Flex flexDirection={['column', 'column', 'row']} justifyContent={['space-around', 'space-around', 'space-around']}>
@@ -38,64 +38,126 @@ const About = () => {
          
         </Flex>
   
-        <Box ml='5' pt='20'  >
-                
-        <Flex gap='14' alignItems='center'  justifyContent={['center', 'center', 'flex-start']}>
-        <Text>CSS3</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={90} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-       
-      
-        <Flex gap='12' alignItems='center' justifyContent={['center', 'center', 'flex-start']}>
-        <Text>HTML5</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={90} colorScheme='twitter' height='20px' />
-        </Box>
-        </Flex>
-        <Flex gap='14' alignItems='center' justifyContent={['center', 'center', 'flex-start']} >
-        <Text>React</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={90} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '8', sm: '6'}} alignItems='center' justifyContent={['center', 'center', 'center']}>
-        <Text>Javascript</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={80} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '7', sm: '5'}}  alignItems='center'  justifyContent={['center', 'center', 'center']}>
-        <Text>TypeScript</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={80} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '12', sm: '10'}}  alignItems='center'  justifyContent={['center', 'center', 'center']} >
-        <Text>NextJS</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={80} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '12', sm: '10'}}  alignItems='center'  justifyContent={['center', 'center', 'center']}>
-        <Text>Node.js</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={80} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '8', sm: '12'}}  alignItems='center'  justifyContent={['center', 'center', 'flex-end']} mr='5'>
-        <Text>Python</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={60} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
-        <Flex gap={{base: '12', sm: '12'}}  alignItems='center' justifyContent={['center', 'center', 'flex-end']}  mr='5'>
-        <Text>Java</Text>
-        <Box style={{ width: '20%' }} >
-        <Progress value={50} height='20px' colorScheme='twitter'/>
-        </Box>
-        </Flex>
+        <Box ml='5' pt='20' pr='5'>
+          <Heading size='sm' textAlign='center' mb='8' color='white'>Technical Skills</Heading>
+          
+          <Box
+            display='grid'
+            gridTemplateColumns={{
+              base: '1fr',
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(3, 1fr)'
+            }}
+            gap={{ base: '4', md: '6', lg: '8' }}
+            maxW={{ base: '400px', md: '800px', lg: '1200px' }}
+            mx='auto'
+            px={{ base: '4', md: '6' }}
+          >
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>CSS3</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>HTML5</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>React</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>JavaScript</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>TypeScript</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>NextJS</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Node.js</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Python</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Java</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={60} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Docker</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Cloud</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Git</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>SQL</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={80} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>AI</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={65} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+            
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>ML</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={60} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+          </Box>
         </Box>
 
         <Heading size='sm' pt='10' textAlign='center'>Where I&apos;ve Worked</Heading>

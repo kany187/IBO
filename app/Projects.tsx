@@ -3,16 +3,17 @@ import { Box, Button, Card, SimpleGrid, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { trackProjectClick } from '../lib/gtag'
 
 
 const Projects = () => {
 
     const projects = [
-        {img: '/coe.png', h1: 'Congo Estate', text: 'NextJS / TypeScript / MySql', link: 'https://congo-estate-app-nextjs.vercel.app'},
+        {img: '/coe.png', h1: 'Congo Estate', text: 'React / Django / PostgreSQL', link: 'https://www.congo-estate.app/'},
         {img: '/CRM.png', h1: 'Hospital Management System', text: 'React / TypeScript / MongoDB', link: 'https://client-hms.vercel.app'},
 
-        {img: '/API.png', h1: 'Receipt Processor API', text: 'Node.js / Docker', link: 'https://github.com/kany187/Receipt-Processor'},
-        {img: '/logo.jpg', h1: 'Congo Estate', text: 'React Native', link: 'https://github.com/kany187/CongoEstate'},
+        {img: '/API.png', h1: 'Receipt Processor API', text: 'Node.js / Docker', link: 'https://github.com/kany187/Receipt-Processor-API'},
+        // {img: '/logo.jpg', h1: 'Congo Estate', text: 'React Native', link: 'https://github.com/kany187/CongoEstate'},
         {img: '/swk2.png', h1: 'SOWORK', text: 'React Native', link: 'https://github.com/kany187/SOWORK-MobileApp'},
       ]
 
@@ -58,7 +59,7 @@ const Projects = () => {
    _hover={{ opacity: 1 }}>
            <Text>{project.h1}</Text>
            <Text>{project.text}</Text>
-           <Link href={project.link}>
+           <Link href={project.link} onClick={() => trackProjectClick(project.h1)}>
            <Button mt='5' fontWeight='700' 
            borderRadius='100%'
             border='1px' 
