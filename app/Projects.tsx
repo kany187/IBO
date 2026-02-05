@@ -56,7 +56,7 @@ const Projects = () => {
       ]
 
   return (
-    <Box h={{ base: '2200px', sm: '2000px', md: '1100px', lg: '1000px', xl: '900px'}}  borderWidth='10px' borderColor='black' id='work'>
+    <Box h={{ base: '2200px', sm: '2000px', md: '1100px', lg: '1000px', xl: '1100px'}}  borderWidth='10px' borderColor='black' id='work'>
         <Text fontSize='30' ml='10' pt='10'>Projects</Text>
         <SimpleGrid columns={4} spacing={1}
         justifyContent={"center"}
