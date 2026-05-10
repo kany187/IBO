@@ -71,108 +71,134 @@ const About = () => {
             mx='auto'
             px={{ base: '4', md: '6' }}
           >
+            {/* Frontend */}
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>CSS3</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>React / React Native</Text>
               <Box flex='1' maxW='150px'>
                 <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
-            
+
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>HTML5</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>React</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>JavaScript</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>TypeScript</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>NextJS</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Node.js</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Python</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Java</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={60} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Docker</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>TypeScript</Text>
               <Box flex='1' maxW='150px'>
                 <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
-            
+
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Cloud</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Next.js</Text>
               <Box flex='1' maxW='150px'>
-                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
-            
+
+            {/* Backend */}
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Git</Text>
-              <Box flex='1' maxW='150px'>
-                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
-              </Box>
-            </Flex>
-            
-            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>SQL</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Python / FastAPI</Text>
               <Box flex='1' maxW='150px'>
                 <Progress value={80} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
-            
+
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>AI</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Django</Text>
               <Box flex='1' maxW='150px'>
-                <Progress value={65} height='16px' colorScheme='cyan' borderRadius='8px'/>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
-            
+
             <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
-              <Text minW='80px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>ML</Text>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Node.js</Text>
               <Box flex='1' maxW='150px'>
-                <Progress value={60} height='16px' colorScheme='cyan' borderRadius='8px'/>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            {/* Databases */}
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>PostgreSQL</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={80} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>MongoDB</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Firebase / Firestore</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={85} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Pinecone (Vector DB)</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>BigQuery</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={70} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            {/* DevOps & Cloud */}
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Docker</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>AWS / GCP / Vercel</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Stripe / PawaPay</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>Git</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={90} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            {/* AI / ML */}
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>LangChain / LangGraph</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>OpenAI API</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={80} height='16px' colorScheme='cyan' borderRadius='8px'/>
+              </Box>
+            </Flex>
+
+            <Flex gap='4' alignItems='center' justifyContent='space-between' w='100%'>
+              <Text minW='120px' textAlign='left' color='white' fontSize={{ base: 'sm', md: 'md' }}>RAG Architecture</Text>
+              <Box flex='1' maxW='150px'>
+                <Progress value={75} height='16px' colorScheme='cyan' borderRadius='8px'/>
               </Box>
             </Flex>
           </Box>

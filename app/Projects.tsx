@@ -10,9 +10,31 @@ const Projects = () => {
 
     const projects = [
         {
-          img: '/coe.png', 
-          h1: 'Congo Estate', 
-          text: 'React / Django / PostgreSQL', 
+          img: '/rag-ai.png',
+          h1: 'RAG Translator',
+          text: 'FastAPI / LangGraph / Pinecone / GPT-4o',
+          link: 'https://translator-ai-react-app.vercel.app/',
+          github: 'https://github.com/kany187/RAG-Translation-AI',
+          description: 'AI-powered translation API for Mbochi, a minority language from the Republic of Congo, grounded in a real Mbochi-French dictionary via RAG.',
+          challenge: 'Digitized an authoritative Mbochi-French dictionary and made it queryable through a LangGraph agent with Pinecone vector retrieval.',
+          result: 'Makes Mbochi accessible to learners, researchers, and heritage speakers through accurate, dictionary-grounded AI translations.',
+          technologies: ['FastAPI', 'LangGraph', 'Pinecone', 'GPT-4o', 'React 19']
+        },
+        {
+          img: '/bissoevent.png',
+          h1: 'BissoEvent',
+          text: 'React Native / Firebase / Stripe / PawaPay',
+          link: 'https://www.bisso-event.com/',
+          github: '#',
+          description: 'Event discovery and ticketing platform for Kinshasa & Brazzaville — attendees browse and buy tickets, organizers manage events with an AI-assisted dashboard.',
+          challenge: 'Integrated Stripe and PawaPay (mobile money) side-by-side, with a real-time analytics pipeline from Firestore through Cloud Functions to BigQuery.',
+          result: 'Brings modern event ticketing with QR codes, push notifications, and AI recommendations to underserved markets in Central Africa.',
+          technologies: ['React Native', 'Firebase', 'Stripe', 'PawaPay', 'FastAPI']
+        },
+        {
+          img: '/coe.png',
+          h1: 'Congo Estate',
+          text: 'React / Django / PostgreSQL',
           link: 'https://www.congo-estate.app/',
           github: 'https://github.com/kany187/CongoEstate',
           description: 'Full-stack real estate platform with advanced search, property management, and user authentication.',
@@ -21,9 +43,9 @@ const Projects = () => {
           technologies: ['React', 'Django', 'PostgreSQL', 'AWS', 'Docker']
         },
         {
-          img: '/CRM.png', 
-          h1: 'Hospital Management System', 
-          text: 'React / TypeScript / MongoDB', 
+          img: '/CRM.png',
+          h1: 'Hospital Management System',
+          text: 'React / TypeScript / MongoDB',
           link: 'https://client-hms.vercel.app',
           github: 'https://github.com/kany187/HMS',
           description: 'Comprehensive healthcare management system with patient records, appointment scheduling, and billing.',
@@ -32,9 +54,9 @@ const Projects = () => {
           technologies: ['React', 'TypeScript', 'MongoDB', 'Node.js', 'JWT']
         },
         {
-          img: '/API.png', 
-          h1: 'Receipt Processor API', 
-          text: 'Node.js / Docker', 
+          img: '/API.png',
+          h1: 'Receipt Processor API',
+          text: 'Node.js / Docker',
           link: 'https://github.com/kany187/Receipt-Processor-API',
           github: 'https://github.com/kany187/Receipt-Processor-API',
           description: 'RESTful API for processing and analyzing receipt data with OCR integration and expense categorization.',
@@ -43,9 +65,9 @@ const Projects = () => {
           technologies: ['Node.js', 'Docker', 'OCR', 'Express', 'MongoDB']
         },
         {
-          img: '/swk2.png', 
-          h1: 'SOWORK', 
-          text: 'React Native', 
+          img: '/swk2.png',
+          h1: 'SOWORK',
+          text: 'React Native',
           link: 'https://github.com/kany187/SOWORK-MobileApp',
           github: 'https://github.com/kany187/SOWORK-MobileApp',
           description: 'Mobile application for remote work management with task tracking, team collaboration, and productivity analytics.',
@@ -56,14 +78,13 @@ const Projects = () => {
       ]
 
   return (
-    <Box h={{ base: '2200px', sm: '2000px', md: '1100px', lg: '1000px', xl: '1100px'}}  borderWidth='10px' borderColor='black' id='work'>
+    <Box minH='fit-content' borderWidth='10px' borderColor='black' id='work' pb='10'>
         <Text fontSize='30' ml='10' pt='10'>Projects</Text>
-        <SimpleGrid columns={4} spacing={1}
-        justifyContent={"center"}
-        alignContent={"center"}
-        display={"flex"}
-        flexWrap={"wrap"}
-        pt='125'
+        <SimpleGrid
+        columns={{ base: 1, sm: 2, lg: 4 }}
+        spacing={6}
+        px='6'
+        pt='10'
         >
             {projects.map((project) => (
  <Card   
